@@ -13,4 +13,5 @@
     <include file="scripts/003_mdl_insert_into_auto_user_table.sql" relativeToChangelogFile="true"/>
     <include file="scripts/004_ddl_create_ price_history_table.sql" relativeToChangelogFile="true"/>
     <include file="scripts/005_ddl_create_ participates_table.sql" relativeToChangelogFile="true"/>
+    <include file="scripts/006_ddl_crete_table_car.sql" relativeToChangelogFile="true"/>
 </databaseChangeLog>
