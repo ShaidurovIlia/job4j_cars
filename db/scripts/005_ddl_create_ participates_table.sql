@@ -1,5 +1,6 @@
-CREATE TABLE if not exists participates(
+CREATE TABLE if not exists participates
+(
    id SERIAL PRIMARY KEY,
-   post_id INT REFERENCES auto_post(id),
+   post_id INT REFERENCES post(id),
    user_id INT REFERENCES auto_user(id)
 );

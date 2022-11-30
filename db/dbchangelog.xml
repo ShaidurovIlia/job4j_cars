@@ -13,5 +13,8 @@
     <include file="scripts/003_mdl_insert_into_auto_user_table.sql" relativeToChangelogFile="true"/>
     <include file="scripts/004_ddl_create_ price_history_table.sql" relativeToChangelogFile="true"/>
     <include file="scripts/005_ddl_create_ participates_table.sql" relativeToChangelogFile="true"/>
-    <include file="scripts/006_ddl_crete_table_car.sql" relativeToChangelogFile="true"/>
+    <include file="scripts/006_ddl_crete_table_cars.sql" relativeToChangelogFile="true"/>
+    <include file="scripts/007_ddl_create_driver_tables.sql" relativeToChangelogFile="true"/>
+    <include file="scripts/008_ddl_create_table_history_owner.sql" relativeToChangelogFile="true"/>
+    <include file="scripts/009_ddl_create_engine_table.sql" relativeToChangelogFile="true"/>
 </databaseChangeLog>
