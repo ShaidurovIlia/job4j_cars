@@ -20,11 +20,14 @@ public class Car {
     @EqualsAndHashCode.Include
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    private String brand;
     private String body;
     private String equipment;
+
     @ManyToOne
     @JoinColumn(name = "engine_id")
     private Engine engine;
+
     @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinTable(name = "history_owner", joinColumns = {
             @JoinColumn(name = "car_id", nullable = false, updatable = false)},

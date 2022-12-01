@@ -2,8 +2,8 @@ create table if not exists history_owner
 (
 id serial primary key,
 name varchar,
-driver_id int not null reference driver(id),
-car_id int not null references car(id),
+driver_id int not null references driver(id),
+car_id int not null references cars(id),
 startAt varchar,
 endAt varchar
 );

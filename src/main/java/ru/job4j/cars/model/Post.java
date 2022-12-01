@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -24,16 +23,19 @@ public class Post {
     private int id;
     private String text;
     private LocalDateTime created;
+    private Byte[] photo;
 
     @ManyToOne
     @JoinColumn(name = "auto_user_id")
     private User user;
+
     @ManyToOne
     @JoinColumn(name = "car_id")
     private Car car;
+
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "post_id")
-    private List<PriceHistory> list = new ArrayList<>();
+    private List<PriceHistory> history;
 
     @ManyToMany
     @JoinTable(
